@@ -46,7 +46,7 @@ class Prime{
 	}
 }
 
-class Primeno extends Prime{
+class PrimeNo extends Prime{
 	public static void main(String[] args){
 		Prime.Prime2(5);
 		Prime.Primeprint(997);
