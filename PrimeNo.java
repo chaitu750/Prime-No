@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Prime{
 	static boolean p;
 	static boolean Prime1(int no){
@@ -46,9 +48,14 @@ class Prime{
 	}
 }
 
-class PrimeNo extends Prime{
+class Primeno extends Prime{
+	private static Scanner s1;
+	
 	public static void main(String[] args){
-		Prime.Prime2(5);
-		Prime.Primeprint(997);
+		s1 = new Scanner(System.in);
+		System.out.println("Enter an Integer\n");
+		int a = s1.nextInt();
+		Prime.Prime2(a);
+		Prime.Primeprint(a);
 	}
 }
